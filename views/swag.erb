@@ -1,0 +1,14 @@
+<h2> Chat Room 69</h3>
+  <p> The world's most mature chat site</p>
+<form action = "/form" method="post">
+  username: <input type="text" name="user">
+  comment: <input type="text" name="comment"></br>
+  <input type="submit" value="submit">
+
+</form>
+
+
+
+<% @items.all.each do |x| %>
+    <p> <%= x[:uname] %>  <%= x[:comment] %> </p>
+<% end %>
